@@ -6,7 +6,7 @@
 /*   By: jbelena <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/11 15:40:41 by jbelena           #+#    #+#             */
-/*   Updated: 2019/11/11 15:43:32 by jbelena          ###   ########.fr       */
+/*   Updated: 2019/11/19 22:40:15 by jbelena          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 
 void	ft_putstr_fd(char *c, int fd)
 {
-	while (*c)
-		write(fd, c++, 1);
+	if (fd && c)
+	{
+		while (*c)
+			write(fd, c++, 1);
+	}
 }

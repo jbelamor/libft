@@ -6,7 +6,7 @@
 /*   By: jbelena <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/15 18:23:57 by jbelena           #+#    #+#             */
-/*   Updated: 2019/11/18 14:27:05 by jbelena          ###   ########.fr       */
+/*   Updated: 2019/11/19 12:41:51 by jbelena          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,11 @@
 
 void	ft_lstadd_back(t_list **alst, t_list *new)
 {
-	if (new)
-		ft_lstlast(*alst)->next = new;
+	t_list *aux;
+
+	aux = ft_lstlast(*alst);
+	if (aux)
+		aux->next = new;
+	else
+		*alst = new;
 }

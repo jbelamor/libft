@@ -6,11 +6,11 @@
 /*   By: jbelena <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/06 22:02:20 by jbelena           #+#    #+#             */
-/*   Updated: 2019/11/13 17:44:43 by jbelena          ###   ########.fr       */
+/*   Updated: 2019/11/22 17:35:57 by jbelena          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "auxiliar.h"
+#include "libft.h"
 
 char	*ft_strdup(const char *s1)
 {
@@ -19,14 +19,9 @@ char	*ft_strdup(const char *s1)
 	int		i;
 
 	i = 0;
-	len = ft_strlen(s1);
-	if (!(p = malloc(sizeof(char) * len + 1)))
+	len = ft_strlen(s1) + 1;
+	if (!(p = malloc(sizeof(char) * len)))
 		return (NULL);
-	while (s1[i])
-	{
-		p[i] = s1[i];
-		i++;
-	}
-	p[i] = 0;
+	ft_memcpy(p, s1, len);
 	return (p);
 }

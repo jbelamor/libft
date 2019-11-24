@@ -6,11 +6,11 @@
 /*   By: jbelena <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 14:23:20 by jbelena           #+#    #+#             */
-/*   Updated: 2019/11/13 18:16:10 by jbelena          ###   ########.fr       */
+/*   Updated: 2019/11/19 22:38:31 by jbelena          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "auxiliar.h"
+#include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
@@ -18,6 +18,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	int		total_len;
 	char	*p;
 
+	if (!s1 || !s2)
+		return (NULL);
 	total_len = ft_strlen(s1) + ft_strlen(s2);
 	if (!(p = malloc(sizeof(char) * total_len + 1)))
 		return (NULL);

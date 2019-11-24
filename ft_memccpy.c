@@ -6,11 +6,11 @@
 /*   By: jbelena <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/06 22:19:14 by jbelena           #+#    #+#             */
-/*   Updated: 2019/11/13 22:02:23 by jbelena          ###   ########.fr       */
+/*   Updated: 2019/11/19 12:54:18 by jbelena          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "auxiliar.h"
+#include "libft.h"
 
 void	*ft_memccpy(void *restrict s2, const void *restrict s1, int c, size_t n)
 {

@@ -6,30 +6,30 @@
 /*   By: jbelena <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/06 22:20:49 by jbelena           #+#    #+#             */
-/*   Updated: 2019/11/13 22:04:54 by jbelena          ###   ########.fr       */
+/*   Updated: 2019/11/24 15:54:41 by jbelena          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "auxiliar.h"
+#include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	size_t	i;
 
-	if (!src)
+	if (!src && !dst)
 		return (NULL);
-	if (dst < src && len)
+	if (src == dst)
+		return (dst);
+	if (((unsigned char *)dst) < ((unsigned char *)src) && len && !(i = 0))
 	{
-		i = 0;
 		while (i < len)
 		{
 			((unsigned char *)dst)[i] = ((unsigned char *)src)[i];
 			i++;
 		}
 	}
-	else if (len)
+	else if (len && (i = len - 1))
 	{
-		i = len - 1;
 		while (i > 0)
 		{
 			((unsigned char *)dst)[i] = ((unsigned char *)src)[i];

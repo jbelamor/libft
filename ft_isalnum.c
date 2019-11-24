@@ -6,11 +6,11 @@
 /*   By: jbelena <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 12:38:45 by jbelena           #+#    #+#             */
-/*   Updated: 2019/11/16 18:10:16 by jbelena          ###   ########.fr       */
+/*   Updated: 2019/11/19 12:54:09 by jbelena          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "auxiliar.h"
+#include "libft.h"
 
 int	ft_isalnum(int c)
 {

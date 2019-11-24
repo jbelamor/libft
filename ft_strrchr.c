@@ -6,11 +6,11 @@
 /*   By: jbelena <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/06 22:30:30 by jbelena           #+#    #+#             */
-/*   Updated: 2019/11/11 18:22:24 by jbelena          ###   ########.fr       */
+/*   Updated: 2019/11/19 12:56:48 by jbelena          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "auxiliar.h"
+#include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {

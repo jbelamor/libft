@@ -6,7 +6,7 @@
 /*   By: jbelena <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/15 19:11:16 by jbelena           #+#    #+#             */
-/*   Updated: 2019/11/16 18:49:26 by jbelena          ###   ########.fr       */
+/*   Updated: 2019/11/21 20:33:04 by jbelena          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-	del(lst);
+	del(lst->content);
 }
